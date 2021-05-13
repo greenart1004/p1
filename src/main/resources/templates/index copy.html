@@ -5,15 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greenart Home</title>
+    <title>부트스트랩5</title>
+    
+    <link rel="stylesheet" href="/static/css/main.css">
+        
+    <!--  slick-carousel css  -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!--  bootstrap  css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/img"> 
+    
+    
+    <!--  bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" 
+        crossorigin="anonymous">
+    </script>
 
-    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">  
-  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!--  jquery   slick같은 라이브러리보다 위에 있어야함    -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous">
+    </script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 
 
@@ -37,28 +56,8 @@
 
 
 <body>
+    
 <!-- header nav ============================================================================================================= -->
-
-<div class="container mt-3 mb-2">
-    <div class="bg-primary">
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-        </ul>
-    </div>
-
-</div>
-
 
 
 
@@ -108,7 +107,7 @@
   <script>
   $(document).ready(function(){
     // Activate the Carousel. Pause it when you move the mouse over it
-   $("#myCarousel").carousel({interval: 3000, pause: "hover"});
+   $("#myCarousel").carousel({interval: 500, pause: "hover"});
           
       
     // Enable Carousel Controls
@@ -180,46 +179,40 @@
 
 
 
-<!-- Start Categories of The Month ================================================================================================================================== -->
-     
-<section class="container py-5">
-    <div class="row text-center pt-3">
-        <div class="col-lg-6 m-auto">
-            <h1 class="h1">Categories of The Month</h1>
-            <p>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-6 col-md-3 p-5 mt-3">
-            <a href="#"><img src="img/55.jpg" class="circle img-fluid border"></a>
-            <h5 class="text-center mt-3 mb-3">Watches</h5>
-            <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
-        </div>
-        <div class="col-6 col-md-3 p-5 mt-3">
-            <a href="#"><img src="img/66.jpg" class="rounded-circle img-fluid border"></a>
-            <h2 class="h5 text-center mt-3 mb-3">Shoes</h2>
-            <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
-        </div>
-        <div class="col-6 col-md-3 p-5 mt-3">
-            <a href="#"><img src="img/77.jpg" class="rounded-circle img-fluid border"></a>
-            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-            <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
-        </div>
-        <div class="col-6 col-md-3 p-5 mt-3">
-            <a href="#"><img src="img/55.jpg" class="rounded-circle img-fluid border"></a>
-            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-            <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
-        </div>
-    </div>
-</section>
-<!-- End Categories of The Month -->
 
 
+<!--    LAY OUT TEST     ============================================================================================================= -->
+
+<h1 class="text-primary">Bootstrap5</h1>
+<h1 class="text-secondary">Bootstrap5</h1>
+<h1 class="text-danger">Bootstrap5</h1>
+<button class="btn btn-primary p-3">Button</button>
+<button class="btn btn-primary bp-5">Button</button>
 
 
+<div class="d-flex row">           <!-- d-flex : display flexbox -->
+    <div class="col-md-4 col-lg-4 bg-success">1</div>
+    <div class="col-md-4 col-lg-4 bg-primary mb-3">2</div>
+    <div class="col-md-4 col-lg-4 bg-danger mb-3">3</div>
+</div>
+
+<div class="row">
+    <div class="col-md-4 col-lg-4 bg-success">1</div>
+    <div class="col-md-4 col-lg-4 bg-primary mb-3">2</div>
+    <div class="col-md-4 col-lg-4 bg-danger mb-3">3</div>
+</div>
+
+
+<div class="d-flex flex-column">
+    <div class="col-md-4 col-lg-4 bg-success mb-3">1</div>
+    <div class="col-md-4 col-lg-4 bg-primary p-3 mb-3">2</div>
+    <div class="col-md-4 col-lg-4 bg-danger p-3 mb-3">3</div>
+</div>
+
+<div class="row bg-danger">
+    <div>1</div>
+</div>
+<!-- ================================================================================================================ -->
 
 </body>
 </html>
