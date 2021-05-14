@@ -10,102 +10,97 @@
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">  
+    <link rel="stylesheet" href="/css/main.css">
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script> -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>  -->
 <style>
-    /* Make the image fully responsive 
-     .carousel-inner img {
-      width: 100%;
-      height: 100%;
+/* header .user_1 {
+    color: rgb(199, 138, 58);
 }
-.carousel-indicators li {
-	background: #c0c0c0;
-}
-.right carousel-control-next span{
-    background: #000;
+header .user_2 {
+    color: rgb(192, 124, 36);
 } */
-
-
-
 </style>
 </head>
-
-
 <body>
 <!-- header nav ============================================================================================================= -->
-<div class="container mt-3">
-    <div class="d-flex p-3 bg-primary text-white">
-        <div class="p-2 " >Flex item 1</div>
-        <div class="p-2 ">Flex item 2</div>
-        <div class="p-2 ">Flex item 3</div>
-        <div class="p-2">Flex item 3</div>
+<header class="container mt-3">
+    <div class="d-flex row ">
+        <div class="col-sm-2 col-md-2 p-4 bg-warning text-white">
+            <img src="" class="d-block w-100" alt="...">
+        </div>
+        <div class="col-sm-10 col-md-10 p-4 bg-warning text-white">
+            <span class="row-sm-2 row=md-2">홈 </span>
+            <span class="row-sm-2 row=md-2">Flex item 2</span>
+            <span class="row-sm-2 row=md-2">Flex item 2</span>
+            <span class="row-sm-4 row=md-4">Flex item 2</span>
+        </div>
     </div>
-</div>
+</header>
 
 <!-- Slider ================================================================================================================ -->
-
- <div class="container mt-3">
-    <h2>Carousel Options</h2>
-    <p>The <strong>pause</strong> option pauses the carousel from going through the slides when the mouse pointer enters the carousel.</p>
-    <p>In this example, we have set pause to "hover" (default), which will stop the slide when you move the mouse over the carousel.</p>  
-    
-
-    <div id="myCarousel" class="carousel slide mt-4 text-center">
-    
-        <ul class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ul> 
+ 
+<div class="container mt-3">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
 
 
-        <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="img/11.jpg" alt="Los Angeles" width="1100" height="500">
+    <div class="carousel-inner fs-2" >
+        <div class="carousel-item active" data-bs-interval="1000">
+            <img onclick="javascript:location.href='https://stylec.co.kr/shop/item.php?it_id=1617770906';" style="cursor:pointer;" src="/img/11.jpg" class="d-block w-100" alt="">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div>
         </div>
-        <div class="carousel-item">
-            <img src="img/22.jpg" alt="Chicago" width="1100" height="500">
+        <div class="carousel-item" data-bs-interval="1000">
+            <img onclick="javascript:location.href='https://stylec.co.kr/shop/item.php?it_id=1617770906';" style="cursor:pointer;" src="/img/22.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block ">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div>
         </div>
-        <div class="carousel-item">
-            <img src="img/33.jpg" alt="New York" width="1100" height="500">
+        <div class="carousel-item" data-bs-interval="1000">
+            <img onclick="javascript:location.href='https://stylec.co.kr/shop/item.php?it_id=1617770906';"  style="cursor:pointer;" src="/img/33.jpg" class="d-block w-100" alt="...">
+           <div class="carousel-caption d-none d-md-block ">     <!-- <div class="carousel-caption d-none d-md-block"></div> -->
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div>
         </div>
-        <div class="carousel-item">
-            <img src="img/44.jpg" alt="seoul" width="1100" height="500">
+        <div class="carousel-item" data-bs-interval="1000">
+            <img onclick="javascript:location.href='https://stylec.co.kr/shop/item.php?it_id=1617770906';" style="cursor:pointer;" src="/img/44.jpg" class="d-block w-100" alt="...">
+           <div class="carousel-caption d-none d-md-block ">     <!-- <div class="carousel-caption d-none d-md-block"></div> -->
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div>
         </div>
-        </div>
-        
-            <a class="left carousel-control-prev" href="#myCarousel" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="right carousel-control-next" href="#myCarousel" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+    </div>
+<!-- //style="cursor:pointer;" =>링크가 걸렸는지 시각적으로 표시 -->
+<!-- //onclick="javascript:location.href='https://stylec.co.kr/shop/item.php?it_id=1617770906';"  => a링크가 안걸릴때 자바스크립트로 링크걸기 -->
 
-        </div>
-    </div> 
-  
-  <script>
-  $(document).ready(function(){
-    // Activate the Carousel. Pause it when you move the mouse over it
-   $("#myCarousel").carousel({interval: 3000, pause: "hover"});
-          
-      
-    // Enable Carousel Controls
-   $(".carousel-control-prev").click(function(){
-     $("#myCarousel").carousel("prev");
-   });
-   $(".carousel-control-next").click(function(){
-     $("#myCarousel").carousel("next");
-   });
-  });
-  </script>  
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
 
 <!-- card    ============================================================================================================== -->
 <section class="container">
@@ -122,6 +117,7 @@
                 <ul class="list-unstyled my-4">
                     <li>no Jquery</li>
                     <li>Jquery slow</li>
+
                 </ul>
             </div>    
         </div>
@@ -176,9 +172,12 @@
             </p>
         </div>
     </div>
+
+    <!-- onclick="javascript:location.href='https://stylec.co.kr/shop/item.php?it_id=1617770906';" style="cursor:pointer;"  -->
+
     <div class="row">
         <div class="col-6 col-md-3 p-5 mt-3">
-            <a href="#"><img src="img/55.jpg" class="circle img-fluid border"></a>
+          <img onclick="javascript:location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130';" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border">
             <h5 class="text-center mt-3 mb-3">Watches</h5>
             <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
         </div>
@@ -212,7 +211,7 @@
         <div class="col-6 col-md">
           <h5>Features</h5>
           <ul class="list-unstyled text-small">
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff11111111111111</a></li>
             <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
             <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
             <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
@@ -243,6 +242,30 @@
   </div>
   <!-- //footer -->
 </div>
+
+<div>
+    <a href="http://stylec.co.kr/shop/item.php?it_id=1618278541&cid=3682992130">aaaaa</a>
+    <button   id="a1a1" type="button" class="btn btn-primary">Primary</button>
+</div>
+
+
+
+<section class="container py-5">
+    <div style="margin:30px auto 0;font-family:'나눔고딕', nanumgothic, AppleSDGothicNeo, sans-serif, simhei;-webkit-font-smoothing:antialiased"> 
+        <div class="se-component-content"> 
+            <div style="margin-left:0;border:1px solid rgb(229, 229, 229);max-width:450px;width:100%;margin-right:auto"> 
+                <div style="background-color:rgb(255, 255, 255);box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.08);display:block;width:100%;-webkit-box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.08)"> 
+                    <div style="padding:21px 26px;display:block;-webkit-box-sizing:border-box;font-size:0;line-height:1.4;box-sizing:border-box"> 
+                        <span style="display:inline-block;vertical-align:middle;height:100%"></span> 
+                            <div style="max-width:100%;display:inline-block;vertical-align:middle"> 
+                            <a href="" style="text-decoration:none" target="_blank"><span style="overflow:hidden;color:rgb(51, 51, 51);white-space:nowrap;word-break:break-all;font-weight:700;display:block;font-size:15px;text-overflow:ellipsis">[SEASON] [PY] 페이즈 통합권 EATS 13종 (빕스/TGIF) 5만원권</span></a> 
+                        <span style="max-height:34px;overflow:hidden;color:rgb(153, 153, 153);white-space:normal;word-break:break-all;display:-webkit-box;font-size:13px;margin-top:7px;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2"></span> 
+                    </div> 
+                </div>  
+            </div> 
+        </div> 
+    </div>
+</section>
 
 
 </body>
