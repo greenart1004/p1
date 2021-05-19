@@ -21,141 +21,188 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 
-<style>
-/*  1 title ====================================================================================================================== */
-/* #cont_nav {background-color: #f6fdff;} */
-.cont_tit1 {background-color: rgba(164, 189, 245, 0.973); height: 150px;}
-/* #cont_ban {background-color: #dceff7;}
-#cont_cont {background-color: #f6fdff;} */
+
+	<style>
+	/*  1 title ====================================================================================================================== */
+	/* #cont_nav {background-color: #f6fdff;} */
+	.cont_tit1 {background-color: rgba(164, 189, 245, 0.973); height: 150px;}
+	/* #cont_ban {background-color: #dceff7;}
+	#cont_cont {background-color: #f6fdff;} */
+	
+	
+	/* 2 navbar ====================================================================================================================== */
+	nav > a{ font-weight: bold;
+	}
+	
+	.mpaa{
+	    /* background: rgb(197, 194, 194); */
+	    background-color: #3399cc;
+	    color: #ffffff;
+	}
+	
+	
+	/* 3 컨텐츠 레이아웃 ================================================================================================= */
+	#cont_nav {background-color: #f6fdff;}
+	#cont_tit {background-color: #EAF7FD; background: rgba(154, 216, 244, 0.2); /* ie9부터 적용*/}
+	#cont_ban {background-color: #dceff7;}
+	#cont_cont {background-color: #f6fdff;}
+	
+	/* 전체 메뉴 */
+	/* .nav {overflow: hidden;} */
+	.nav > div {float: left;} 
+	/* .nav > div:last-child {width: 20%;} ie9부터 사용가능 */
+	.nav > div h3 {font-size: 18px; color:#25a2d0; margin-bottom: 5px; padding: 0;     }
+	.nav > div ul {padding: 0; margin: 0;}
+	.nav > div ul li {float: left;}
+	.nav > div.last ul li {width: 100%;}
+	/* .nav > div ul li a:hover {text-decoration: underline;} */
+	
+	
+	/* 7 Categories ================================================================================================================*/
+	
+	.title { 
+	    font-size: 20px;
+	    color: blue;
+	    border: black;
+	
+	}
+	
+	/* 7 Sliders ================================================================================================================*/
+	
+	.Sliders{
+	    width: 230px;
+	    
+	
+	}
+	
+	.Slider{}
+	
+	.Slider1{
+	     width: 230px;
+	    height: 300px;
+	
+	
+	}
+	.li1{
+	    width: 300px;
+	height: 300px;
+	
+	}
+	.Slider1 ul li img{
+	    display: inline-block;
+	    padding: 1px;
+	    width: 100px;
+	    height: auto;
+	
+	}
 
 
-/* 2 navbar ====================================================================================================================== */
-nav > a{ font-weight: bold;
-}
-
-.mpaa{
-    /* background: rgb(197, 194, 194); */
-    background-color: #3399cc;
-    color: #ffffff;
-}
-
-
-/* 3 컨텐츠 레이아웃 ================================================================================================= */
-#cont_nav {background-color: #f6fdff;}
-#cont_tit {background-color: #EAF7FD; background: rgba(154, 216, 244, 0.2); /* ie9부터 적용*/}
-#cont_ban {background-color: #dceff7;}
-#cont_cont {background-color: #f6fdff;}
-
-/* 전체 메뉴 */
-/* .nav {overflow: hidden;} */
-.nav > div {float: left;} 
-/* .nav > div:last-child {width: 20%;} ie9부터 사용가능 */
-.nav > div h3 {font-size: 18px; color:#25a2d0; margin-bottom: 5px; padding: 0;     }
-.nav > div ul {padding: 0; margin: 0;}
-.nav > div ul li {float: left;}
-.nav > div.last ul li {width: 100%;}
-/* .nav > div ul li a:hover {text-decoration: underline;} */
-
-
-/* 7 Categories ================================================================================================================*/
-
-.title { 
-    font-size: 500px;
-    color: blue;
-    border: black;
-
-}
-
-/* 7 Sliders ================================================================================================================*/
-
-.Sliders{
-    width: 230px;
-    
-
-}
-
-.Slider{}
-
-.Slider1{
-     width: 230px;
-    height: 300px;
-
-
-}
-.li1{
-    width: 300px;
-height: 300px;
-
-}
-.Slider1 ul li img{
-    display: inline-block;
-    padding: 1px;
-    width: 100px;
-    height: auto;
-
-}
-.Slider2{}
-
-
-/* products */
-.products {padding: 60px 0 70px; }
-/* .products h2 {font-size: 26px; text-align: center; padding-bottom: 30px;} */
-.products .products_box {overflow: hidden; }
-/* .products .products_box .column {float: left; width: 320px; height:300px; margin:0 10px 20px 10px; } */
-.products .products_box .column a:hover {text-decoration: none;}
-.products .products_box .column h3 {font-size: 16px; margin-top: 20px;}
-.products .products_box .column a:hover h3 {text-decoration: underline; color: #222;}
-.products .products_box .column p {color: #555; margin-top: 12px;}
-
-
-
+	
+	
 /* 7 볼랜드 툴로 3D 텍스트 만들기 ================================================================================================================*/
-.item-lists{
-    width: auto;
-    /* width: 100%;
-    max-width: 375px; */
-    border: 1px solid rgb(177, 154, 154);
-    border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-}
 
-.item-lists > h1 {
-    font-size: 30px;
-    padding: 20px ;
-    margin: 12px 0;
-    border-bottom: 1px solid #d0d0d0;
-    color: rgb(9, 13, 243);
-}
-
-.item{
-    border-radius: 8px;
-    margin-left: 7%;
-    /* padding: 12px; */
-    transition: 0.3s;
-}
-
-.item:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0,.1);
-}
-
-.item img{
-    float:left;
-    margin-right: 30px;
-    border-radius: 10px;
-}
-</style>
+	.high1{
+		width : 250px;
+		height:auto;
+	} 
+	
+	
+	
+	/* 7 볼랜드 툴로 3D 텍스트 만들기 ================================================================================================================*/
+	.item-lists{
+	    width: auto;
+	    /* width: 100%;
+	    max-width: 375px; */
+	    border: 1px solid rgb(177, 154, 154);
+	    border-radius: 20px;
+	    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+	}
+	
+	.item-lists > h1 {
+	    font-size: 30px;
+	    padding: 20px ;
+	    margin: 12px 0;
+	    border-bottom: 1px solid #d0d0d0;
+	    color: rgb(9, 13, 243);
+	}
+	
+	.item{
+	    border-radius: 8px;
+	    margin-left: 7%;
+	    /* padding: 12px; */
+	    transition: 0.3s;
+	}
+	
+	.item:hover {
+	    box-shadow: 0 4px 12px rgba(0,0,0,0,.1);
+	}
+	
+	.item img{
+	    float:left;
+	    margin-right: 30px;
+	    border-radius: 10px;
+	}
+	
+	/* 푸터 */
+	.footer {padding: 25px 0; text-align: center;}
+	.footer ul {margin-bottom: 20px;}
+	.footer li {position: relative; display: inline; padding: 0 7px 0 10px;}
+	.footer li:before {content: ''; width: 1px; height: 12px; background: #ccc; position: absolute; left: 0; top: 2px;}
+	.footer li:first-child:before {width: 0; height: 0;}
+	.footer .w3c {margin-top: 15px;}
+	
+	</style>
 
 </head>
 <body>
+    <!--- container  // container-fluid -->
+<!-- 1 nav -------------------------------------------------------------------------------------------------------------->
+        <nav class="navbar navbar-expand-lg navbar-light" >
+            <a class="navbar-brand fs-4" href="index.html">Green People World</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="oi oi-menu"></span> Menu
+            </button>
+      
+            <div class="collapse navbar-collapse" id="ftco-nav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Tour</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Hotels</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Contact</a></li>
+                <li class="nav-item cta"><a href="index.html" class="nav-link"><span>Add listing</span></a></li>
+              </ul>
+            </div>
+        </nav>
+
+
 
 <!-- 2 icon ---------------------------------------------------------------------------------------------------------------->
-    <div class="row cont_tit1 align-items-center text-center">
+    <!-- <div class="row cont_tit1 align-items-center text-center">
         <h2><img onclick="javascript:location.href='#';" style="cursor:pointer;" src="/img/greenart.jpg" class="w-15 h-15" alt="..."></h2>   
+    </div> -->
+    <!-- &ldquo;&rdquo;   큰 따옴표 -->
+    <style>
+    .text3{
+        height: 200px;
+        background: rgb(8, 231, 19);
+
+    
+    }
+    .text3-1{
+        padding-top: 20px;
+        vertical-align: center;
+        text-align: center;
+         font-size: 100px;
+font-weight: normal;
+    }
+
+
+    </style>
+    <div class="row text3">
+        <div class="text3-1 text-white"> Green People World </div> 
     </div>
-
-
-     <!-- &ldquo;&rdquo;   큰 따옴표 -->
-
 
 <div   class="container pt-5">
 <!-- 3 content1---------------------------------------------------------------------------------------------------------------->
@@ -281,6 +328,63 @@ height: 300px;
         <!-- //cont_tit -->
 </div>
   
+<!-- Slider ============================================================================================================== -->
+ 
+<div class="container mt-5">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+    
+    
+        <div class="carousel-inner fs-2" >
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img onclick="javascript:location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="/img/11.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img onclick="javascript:location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="/img/22.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img onclick="javascript:location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130'"  style="cursor:pointer;" src="/img/33.jpg" class="d-block w-100" alt="...">
+               <div class="carousel-caption d-none d-md-block ">     <!-- <div class="carousel-caption d-none d-md-block"></div> -->
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img onclick="javascript:location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130';" style="cursor:pointer;" src="/img/44.jpg" class="d-block w-100" alt="...">
+               <div class="carousel-caption d-none d-md-block ">     <!-- <div class="carousel-caption d-none d-md-block"></div> -->
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+        </div>
+    <!-- //style="cursor:pointer;" =>링크가 걸렸는지 시각적으로 표시 -->
+    <!-- //onclick="javascript:location.href='https://stylec.co.kr/shop/item.php?it_id=1617770906';"  => a링크가 안걸릴때 자바스크립트로 링크걸기 -->
+    
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
 <!-- 4 Categories---------------------------------------------------------------------------------------------------------------->
     <div class="row text-center fs-1 text-white bg-primary mt-5">
         <div class="col-5">Categories Items </div> 
@@ -291,51 +395,323 @@ height: 300px;
 <!--// style="cursor:pointer;" =>링크가 걸렸는지 시각적으로 표시 -->
 <!--// onclick="javascript:location.href='https://stylec.co.kr/shop/item.php?it_id=1617770906';"  => a링크가 안걸릴때 자바스크립트로 링크걸기 -->
 <!--// <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border"> -->
-    <div class="row pt-3">
-        <div class="col-sm-6 text-center title title1"><h2> Categories1</h2> </div>
-        <div class="col-sm-6 text-center title title2"><h2> Categories2</h2> </div>
-    </div>
-
-    <!-- <div class="container "> -->
+   
+        <div class="row pt-5">
+            <div class="col-sm-6 text-center title title1"><h2> Categories1</h2> </div>
+            <div class="col-sm-6 text-center title title2"><h2> Categories2</h2> </div>
+        </div>
+    
+        <!-- <div class="container "> -->
         <div class="row pt-2">
                 <div class="col-2">
-                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="rounded-circle img-fluid border">
-                    <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-                    <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
+                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
                 </div>       
                 <div class="col-2">
-                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="rounded-circle img-fluid border">
-                    <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-                    <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
+                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
                 </div>
                 <div class="col-2 border-end">
+                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
+                </div>       
+                <div class="col-2">
                     <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="rounded-circle img-fluid border">
-                    <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-                    <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
                 </div>       
                 <div class="col-2">
-                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border">
-                    <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-                    <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
-                </div>       
-                <div class="col-2">
-                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border">
-                    <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-                    <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
+                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="rounded-circle img-fluid border">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
                 </div>
                 <div class="col-2 ">
-                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border">
-                    <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-                    <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
-                </div>       
-        </div><hr> 
-
+                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="rounded-circle img-fluid border">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
+                </div>   <hr>  
+        <!-- </div> -->
 
         <div class="row pt-5">
             <div class="col-sm-6 text-center title title1"><h2> Categories3</h2> </div>
             <div class="col-sm-6 text-center title title2"><h2> Categories4</h2> </div>
         </div>
     
+        <!-- <div class="container "> -->
+        <div class="row pt-2">
+                <div class="col-2">
+                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="rounded-circle img-fluid border">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
+                </div>       
+                <div class="col-2">
+                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="rounded-circle img-fluid border">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
+                </div>
+                <div class="col-2 border-end">
+                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="rounded-circle img-fluid border">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
+                </div>       
+                <div class="col-2">
+                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
+                </div>       
+                <div class="col-2">
+                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
+                </div>
+                <div class="col-2 ">
+                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
+                </div>       
+        </div>
+    </div><hr> 
+    </div>
+ 
+
+
+
+<!-- 2 icon ---------------------------------------------------------------------------------------------------------------->
+<div class="row text-center fs-1 text-white bg-success mt-5">
+    <div class="col-5">Hot Items </div> 
+</div>
+
+<div   class="container mt-3">
+	<div class="item-lists p-3 mt-3">
+		    <div class="row">
+		        <div class="col-3">
+		            <img src="img/55.jpg" class="circle img-fluid">
+		        </div>      
+		        <div class="col-3">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+		        </div>   
+		
+		
+		        <div class="col-3">
+		            <img src="img/55.jpg" class="circle img-fluid">
+		        </div>
+		        <div class="col-3">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+		        </div>  
+		    </div><hr> 
+		
+		    <div class="row pt-2">
+		        <div class="col-3">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+		        </div>   
+		        <div class="col-3">
+		            <img src="img/55.jpg" class="circle img-fluid">
+		        </div>      
+		
+		        <div class="col-3">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+		        </div> 
+		        <div class="col-3">
+		            <img src="img/55.jpg" class="circle img-fluid">
+		        </div>
+		    </div><hr> 
+		
+		
+		    <div class="row pt-2">
+		        <div class="col-3">
+		            <img src="img/55.jpg" class="circle img-fluid">
+		        </div>      
+		        <div class="col-3">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+		        </div>   
+		
+		        <div class="col-3">
+		            <img src="img/55.jpg" class="circle img-fluid">
+		        </div>
+		        <div class="col-3">
+		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+		            <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+		        </div>  
+		    </div>
+		</div>
+       </div><hr> 
+    <!-- //style="cursor:pointer;" =>링크가 걸렸는지 시각적으로 표시 -->
+    <!-- //onclick="javascript:location.href='https://stylec.co.kr/shop/item.php?it_id=1617770906';"  => a링크가 안걸릴때 자바스크립트로 링크걸기 -->
+<!-- 6 볼랜드 툴로 3D 텍스트 만들기 ---------------------------------------------------------------------------------------------------------->
+<div class="row text-center fs-1 text-white bg-danger mt-5">
+    <div class="col-5">Season Items </div> 
+</div>
+
+        <div class="container mt-3">
+			<div class="row mt-2">
+				<div class="row   text-center ">
+	                <div class="col-4 ">
+	                    <img src="img/55.jpg" class="w-75 circle img-fluid">
+	                    <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+	                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+	                    <p class="text-center"><a class="btn btn-danger">Go Shop</a></p>
+	                </div>       
+	                <div class="col-4">
+	                    <img src="img/55.jpg" class="w-75 circle img-fluid">
+	                    <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+	                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+	                    <p class="text-center"><a class="btn btn-danger">Go Shop</a></p>
+	                </div>
+	                <div class="col-4 ">
+	                    <img src="img/55.jpg" class="w-75 circle img-fluid">
+	                    <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+	                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+	                    <p class="text-center"><a class="btn btn-danger">Go Shop</a></p>
+	                </div>  <hr>     
+				</div>
+				<div class="row   text-center">
+	                <div class="col-4">
+	                    <img src="img/55.jpg" class="w-75 circle img-fluid">
+	                    <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+	                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+	                    <p class="text-center"><a class="btn btn-danger">Go Shop</a></p>
+	                </div>       
+	                <div class="col-4">
+	                    <img src="img/55.jpg" class="w-75 circle img-fluid">
+	                    <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+	                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+	                    <p class="text-center"><a class="btn btn-danger">Go Shop</a></p>
+	                </div>
+	                <div class="col-4 ">
+	                    <img src="img/55.jpg" class="w-75 circle img-fluid">
+	                    <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+	                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
+	                    <p class="text-center"><a class="btn btn-danger">Go Shop</a></p>
+	                </div>       
+				</div>
+	        </div>
+        </div> 
+        
+<!-- 6 볼랜드 툴로 3D 텍스트 만들기 ---------------------------------------------------------------------------------------------------------------->
+    <div class="row text-center fs-1 text-white bg-warning mt-5">
+        <div class="col-5">Season Items </div> 
+    </div>
+
+<div   class="container mt-3">
+    <div class="row mt-3 ">
+        <div class="col-6 ">
+            <div class="item-lists ">
+                <h1>그린아트</h1>
+				<div class="row  p-3 mt-3">
+			        <div class="col-3">
+			            <img src="img/55.jpg" class="circle img-fluid">
+			        </div>      
+			        <div class="col-3">
+			            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+			            <p class="text-center">9900원</p>
+			            <p class="text-center"><a class="btn btn-warning">Go Shop</a></p>
+			        </div>   
+			        <div class="col-3">
+			            <img src="img/55.jpg" class="circle img-fluid">
+			        </div>      
+			        <div class="col-3">
+			            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+			        	<p class="text-center">9900원</p>
+			            <p class="text-center"><a class="btn btn-warning">Go Shop</a></p>
+			        </div> 
+				</div>
+            </div>
+            <div class="item-lists p-3 mt-3 ">
+                <h1>그린아트</h1>
+				<div class="row mt-3">
+			        <div class="col-3">
+			            <img src="img/55.jpg" class="circle img-fluid">
+			        </div>      
+			        <div class="col-3">
+			            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+			            <p class="text-center">9900원</p>
+			            <p class="text-center"><a class="btn btn-warning">Go Shop</a></p>
+			        </div>   
+			        <div class="col-3">
+			            <img src="img/55.jpg" class="circle img-fluid">
+			        </div>      
+			        <div class="col-3">
+			            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+			        	<p class="text-center">9900원</p>
+			            <p class="text-center"><a class="btn btn-warning">Go Shop</a></p>
+			        </div> 
+				</div>
+            </div>
+        </div>
+        <!-- <div class="col-6 bg-primary">.col</div> -->
+        <div class="col-6">
+            <div class="item-lists  p-3 ">
+                <h1>그린아트</h1>
+				<div class="row mt-3">
+			        <div class="col-3">
+			            <img src="img/55.jpg" class="circle img-fluid">
+			        </div>      
+			        <div class="col-3">
+			            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+			            <p class="text-center">9900원</p>
+			            <p class="text-center"><a class="btn btn-warning">Go Shop</a></p>
+			        </div>   
+			        <div class="col-3">
+			            <img src="img/55.jpg" class="circle img-fluid">
+			        </div>      
+			        <div class="col-3">
+			            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+			        	<p class="text-center">9900원</p>
+			            <p class="text-center"><a class="btn btn-warning">Go Shop</a></p>
+			        </div> 
+				</div>
+            </div>
+    		<div class="item-lists p-3 mt-3">
+                <h1>그린아트</h1>
+				<div class="row mt-3">
+			        <div class="col-3">
+			            <img src="img/55.jpg" class="circle img-fluid">
+			        </div>      
+			        <div class="col-3">
+			            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+			            <p class="text-center">9900원</p>
+			            <p class="text-center"><a class="btn btn-warning">Go Shop</a></p>
+			        </div>   
+			        <div class="col-3">
+			            <img src="img/55.jpg" class="circle img-fluid">
+			        </div>      
+			        <div class="col-3">
+			            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+			        	<p class="text-center">9900원</p>
+			            <p class="text-center"><a class="btn btn-warning">Go Shop</a></p>
+			        </div> 
+				</div>
+            </div>
+        </div>
+    </div>
+
+
 
 <!-- 7 footer ---------------------------------------------------------------------------------------------------------------->
 
