@@ -157,21 +157,46 @@
 <body>
     <!--- container  // container-fluid -->
 <!-- 1 nav -------------------------------------------------------------------------------------------------------------->
+    <style>
+        .title4{
+            width: 300px;
+            height: auto;
+            
+
+        
+        }
+        /* .text3-1{
+            padding-top: 20px;
+            vertical-align: center;
+            text-align: center;
+            font-size: 80px;
+            font-weight: normal;
+        } */
+
+
+    </style>   
+
         <nav class="navbar navbar-expand-lg navbar-light" >
-            <a class="navbar-brand fs-4" href="index.html">Green People World</a>
+          <a class="navbar-brand " href="/">Green People World </a> 
+           
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="oi oi-menu"></span> Menu
             </button>
       
+            <!-- <img src="img/style.jpg" class="title4 circle border"> -->
+
+
+
+
             <div class="collapse navbar-collapse" id="ftco-nav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="index.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="index.html" class="nav-link">Tour</a></li>
-                <li class="nav-item"><a href="index.html" class="nav-link">Hotels</a></li>
-                <li class="nav-item"><a href="index.html" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="index.html" class="nav-link">Contact</a></li>
-                <li class="nav-item cta"><a href="index.html" class="nav-link"><span>Add listing</span></a></li>
+                <li class="nav-item"><a href="/" class="nav-link"></a></li>
+                <li class="nav-item"><a href="/" class="nav-link">Tour</a></li>
+                <li class="nav-item"><a href="/" class="nav-link">Hotels</a></li>
+                <li class="nav-item"><a href="/" class="nav-link">게시판</a></li>
+                <li class="nav-item"><a href="/" class="nav-link">Q&A</a></li>
+                <!-- <li class="nav-item cta"><a href="/" class="nav-link"><span>Add listing</span></a></li> -->
               </ul>
             </div>
         </nav>
@@ -186,7 +211,7 @@
 
 
 
-    <!-- 2  GATE ----------------------------------------------------------------------------------------------------->
+    <!-- 2  GATE -------------------------------------------------------------------------------------------------->
 
     <style>
     .text3{
@@ -202,19 +227,24 @@
          font-size: 80px;
 font-weight: normal;
     }
+     </style>
 
-
-    </style>
+<!-- 1. 제일큰 타이틀 ------------------------------------------------------------------------------------------------------------>
     <div class="row text3">
         <div class="text3-1 text-white"> Green People World </div> 
     </div>
 
-<div   class="container pt-5">
-<!-- 3 content1---------------------------------------------------------------------------------------------------------------->
-    <div id="contents" class="row">
+
+ <!-- 3 content1------------------------------------------------------------------------------------------------------------>
+
+ <div   class="container   pt-5">
+    <!-- <div class="row text-primary">
+        <div class="pt-3 fs-2 "> Categories </div> 
+    </div> -->
+    <div id="contents" class="row pt-3">
         <div class="nav">
             <div class="col-sm-4 col-md-2" >
-                <h3 class=" fs-4">HTML Reference</h3>
+                <h3 class=" fs-4">생활/건강</h3>
                 <ul>
                     <li><a href="#" class="text-dark">HTML 태그(Tag)</a></li>
                     <li><a href="#" class="text-dark">블록 요소/인라인 요소</a></li>
@@ -233,7 +263,7 @@ font-weight: normal;
                 </ul>
             </div>
             <div class="col-sm-4 col-md-2" >
-                <h3 class=" fs-4">CSS Reference</h3>
+                <h3 class=" fs-4">디지털/가전</h3>
                 <ul>
                     <li><a href="#" class="text-dark">CSS 선택자</a></li>
                     <li><a href="#" class="text-dark">CSS 단위</a></li>
@@ -252,7 +282,7 @@ font-weight: normal;
                 </ul>
             </div>
             <div class="col-sm-4 col-md-2" >
-                <h3 class=" fs-4">CSS Reference</h3>
+                <h3 class=" fs-4">화장품/미용</h3>
                 <ul>
                     <li><a href="#" class="text-dark">CSS 선택자</a></li>
                     <li><a href="#" class="text-dark">CSS 단위</a></li>
@@ -271,7 +301,7 @@ font-weight: normal;
                 </ul>
             </div>
             <div class="col-sm-4 col-md-2" >
-                <h3 class=" fs-4">CSS Reference</h3>
+                <h3 class=" fs-4">출산/육아</h3>
                 <ul>
                     <li><a href="#" class="text-dark">CSS 선택자</a></li>
                     <li><a href="#" class="text-dark">CSS 단위</a></li>
@@ -290,7 +320,7 @@ font-weight: normal;
                 </ul>
             </div>
             <div class="col-sm-4 col-md-2" >
-                <h3 class=" fs-4">CSS Reference</h3>
+                <h3 class=" fs-4">패션</h3>
                 <ul>
                     <li><a href="#" class="text-dark">CSS 선택자</a></li>
                     <li><a href="#" class="text-dark">CSS 단위</a></li>
@@ -309,7 +339,7 @@ font-weight: normal;
                 </ul>
             </div>
             <div class="col-sm-4 col-md-2 last">
-                <h3 class=" fs-4">Webstandard</h3>
+                <h3 class=" fs-4">가구인테리어</h3>
                 <ul>
                     <li><a href="#" class="text-dark">웹 표준</a></li>
                     <li><a href="#" class="text-dark">웹 접근성</a></li>
@@ -402,23 +432,24 @@ font-weight: normal;
 <!--// <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border"> -->
    
         <div class="row pt-5">
-            <div class="col-sm-6 text-center title title1"><h2> Categories1</h2> </div>
-            <div class="col-sm-6 text-center title title2"><h2> Categories2</h2> </div>
+            <div class="col-sm-6 text-center title title1"><h2> 생활/건강 </h2> </div>
+            <div class="col-sm-6 text-center title title2"><h2> 디지털/가전</h2> </div>
         </div>
     
         <!-- <div class="container "> -->
         <div class="row pt-2">
-                <div class="col-2">
-                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border">
-		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-                    <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
-		            <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
+                <div class="col-2 text-center">
+                    <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://www.stylec.co.kr/shop/item.php?it_id=1616649740&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border">
+		            <h4 class="h5 text-center mt-3 mb-3"> <b>실바트 후라이팬</b></h4>
+                    <h4 class="h5 text-center mt-3 mb-3"> <b> 5종 세트</b></h4>
+                    <h2 class="h5 text-center mt-3 mb-3">68,400원</h2>
+		            <p class="text-center btn btn-primary"> Go Shop </p>
                 </div>       
                 <div class="col-2">
                     <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border">
 		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
                     <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
-		            <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
+		            <p class="text-center"><a class="btn btn-primary" href="http://www.stylec.co.kr/shop/item.php?it_id=1616649740&cid=3682992130;">Go Shop</a></p>
                 </div>
                 <div class="col-2 border-end">
                     <img onclick="javascript:newin=window.open('about:_blank');newin.location.href='http://stylec.co.kr/shop/item.php?it_id=1617770906&cid=3682992130;'" style="cursor:pointer;" src="img/55.jpg" class="circle img-fluid border">
@@ -443,12 +474,12 @@ font-weight: normal;
 		            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
                     <h2 class="h5 text-center mt-3 mb-3">9900원</h2>
 		            <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
-                </div>   <hr>  
+                </div>   <hr>    
         <!-- </div> -->
 
         <div class="row pt-5">
-            <div class="col-sm-6 text-center title title1"><h2> Categories3</h2> </div>
-            <div class="col-sm-6 text-center title title2"><h2> Categories4</h2> </div>
+            <div class="col-sm-6 text-center title title1"><h2> 화장품/미용</h2> </div>
+            <div class="col-sm-6 text-center title title2"><h2> 가구/인테리어</h2> </div>
         </div>
     
         <!-- <div class="container "> -->
@@ -498,7 +529,7 @@ font-weight: normal;
 
 <!-- 2 icon ---------------------------------------------------------------------------------------------------------------->
 <div class="row text-center fs-1 text-white bg-success mt-5">
-    <div class="col-5">Hot Items </div> 
+    <div class="col-5">New Items </div> 
 </div>
 
 <div   class="container mt-3">
@@ -570,7 +601,7 @@ font-weight: normal;
     <!-- //onclick="javascript:location.href='https://stylec.co.kr/shop/item.php?it_id=1617770906';"  => a링크가 안걸릴때 자바스크립트로 링크걸기 -->
 <!-- 6 볼랜드 툴로 3D 텍스트 만들기 ---------------------------------------------------------------------------------------------------------->
 <div class="row text-center fs-1 text-white bg-danger mt-5">
-    <div class="col-5">Season Items </div> 
+    <div class="col-5">Best Items </div> 
 </div>
 
         <div class="container mt-3">
