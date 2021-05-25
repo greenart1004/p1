@@ -11,8 +11,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost/qtype?serverTimezone=Asia/Seoul&characterEncoding=UTF-8 #13.125.117.231    
-    username: cos
-    password: cos1234
+    username: cos1
+    password: green0203
 #  mvc hiddenmethod filter enabled : true                       
 
   jpa:
